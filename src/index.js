@@ -9,11 +9,11 @@ import img_icon from "../img/webgl_logo.svg";
 // my Imports
 import ShaderProgram from "./ShaderProgram";
 import TextureProgram from "./TextureProgram";
+import Colors from "./Colors";
 
 // import shaders code
 import vertex_code from "../shaders/vert.vert";
 import fragment_code from "../shaders/frag.frag";
-import Colors from "./Colors";
 
 // ----------------------------------------------------------------------------------------
 // WebGl 2.0
