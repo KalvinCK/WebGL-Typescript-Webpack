@@ -7,7 +7,6 @@ import img_texture from "./img/goku.jpg";
 import img_icon from "./img/webgl_logo.svg";
 
 // my Imports
-<<<<<<< HEAD:src/main.js
 import ShaderProgram from "./js/ShaderProgram";
 import TextureProgram from "./js/TextureProgram";
 import Colors from "./js/Colors";
@@ -18,15 +17,9 @@ import Timer from "./js/Timer";
 import vertex_code from "./shaders/vert.vert";
 import fragment_code from "./shaders/frag.frag";
 
-=======
-import ShaderProgram from "./ShaderProgram";
-import TextureProgram from "./TextureProgram";
-import Colors from "./Colors";
-
 // import shaders code
 import vertex_code from "../shaders/vert.vert";
 import fragment_code from "../shaders/frag.frag";
->>>>>>> 7e3b9961f295cfa8108f09b3fe1eb77f0d78d260:src/index.js
 
 // ----------------------------------------------------------------------------------------
 // WebGl 2.0
