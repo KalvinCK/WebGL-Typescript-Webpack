@@ -19,3 +19,5 @@ app.listen(8080, () =>
 {
   console.log("server rodando na porta http://localhost:8080");
 });
+
+// run server => npm start our npm run server

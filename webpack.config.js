@@ -1,13 +1,14 @@
 const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { config } = require("process");
 
 module.exports =
 {
     mode: "development",
     entry: 
     {
-        index: "./src/Main.js"
+        index: "./src/Main.ts"
     },
     devtool: 'inline-source-map',
     devServer: 
@@ -17,7 +18,7 @@ module.exports =
     plugins: 
     [
         new HtmlWebpackPlugin({
-          title: 'Development',
+          title: 'WebGL APP',
         }),
     ],
     output: 
@@ -29,6 +30,11 @@ module.exports =
     },
     module: {
         rules: [
+          {
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/,
+          },
           {
             test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
@@ -43,9 +49,14 @@ module.exports =
           }
         ],
     },
+    resolve: 
+    {
+      extensions: ['.tsx', '.ts', '.js'],
+    },
     optimization:
     {
         runtimeChunk: "single",
     },
 };
+
 // npm run server

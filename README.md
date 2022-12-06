@@ -1,4 +1,4 @@
-# Webpack + OpenGL
+# Webpack + OpenGL + Typescript
 
 Meu projeto em webgl utilizando webpack para facilitar minha vida e abusar de bibliotecas, estou construindo ele com orientação a objetos. 
 Um ponto positivo e que estou utilizando os shaders em arquivos separados em vez de utilizalos em formas de strings que acaba sendo bem chato programar dessa forma.
